@@ -7,7 +7,7 @@ const Projects = () => {
             <h1 className="text-4xl text-center mb-14">Projects</h1>
             <ul className="flex flex-col md:flex-row px-10 gap-20">
                 {projects.map((project, index) => (
-                    <li key={index} className="flex flex-col justify-between text-center w-full md:w-[33vw] h-[400px  ]">
+                    <li key={index} className="flex flex-col justify-between text-center w-full md:w-[33vw]">
                         <h1 className="mb-auto text-2xl">{project.name}</h1>
                         <a href={project.url}>
                             <img
