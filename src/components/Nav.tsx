@@ -66,7 +66,7 @@ const Navbar = () => {
                     </div>
                     {navigations.map((nav, index) => (
                         <li key={index}>
-                            <Link to={nav} smooth={true} duration={500} offset={-70} onClick={() => setIsOpen(false)} className="cursor-pointer">
+                            <Link to={nav} spy={true} smooth={true} offset={50} duration={500} delay={1200} onClick={() => setIsOpen(false)} className="cursor-pointer">
                                 {nav}
                             </Link>
                         </li>
