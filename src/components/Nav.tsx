@@ -48,6 +48,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                 ))}
+                <li className="text-white hover:text-hover cursor-pointer">CV</li>
             </ul>
             <div className="lg:hidden">
                 <div onClick={() => setIsOpen(true)} className="cursor-pointer absolute top-7 right-5">
@@ -70,6 +71,9 @@ const Navbar = () => {
                             </Link>
                         </li>
                     ))}
+                    <li onClick={() => setIsOpen(false)} className="text-white hover:text-hover cursor-pointer">
+                        CV
+                    </li>
                 </motion.ul>
             </div>
         </nav>

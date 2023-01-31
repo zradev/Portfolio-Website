@@ -1,13 +1,37 @@
 import React from "react";
 import { projects } from "../utils/constants";
+import { motion } from "framer-motion";
 
 const Projects = () => {
     return (
         <section id="Projects" className="bg-secondary py-10">
-            <h1 className="text-4xl text-center mb-14">Projects</h1>
+            <motion.h1
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.5 }}
+                variants={{
+                    hidden: { opacity: 0, y: 50 },
+                    visible: { opacity: 1, y: 0 }
+                }}
+                className="text-4xl text-center mb-14"
+            >
+                Projects
+            </motion.h1>
             <ul className="flex flex-col md:flex-row px-10 gap-20">
                 {projects.map((project, index) => (
-                    <li key={index} className="flex flex-col justify-between text-center w-full md:w-[33vw]">
+                    <motion.li
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.5 }}
+                        transition={{ duration: 0.5 }}
+                        variants={{
+                            hidden: { opacity: 0, y: 50 },
+                            visible: { opacity: 1, y: 0 }
+                        }}
+                        key={index}
+                        className="flex flex-col justify-between text-center w-full md:w-[33vw]"
+                    >
                         <h1 className="mb-auto text-2xl">{project.name}</h1>
                         <a href={project.url}>
                             <img
@@ -23,7 +47,7 @@ const Projects = () => {
                                 Demo
                             </a>
                         </button>
-                    </li>
+                    </motion.li>
                 ))}
             </ul>
         </section>
