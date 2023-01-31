@@ -8,8 +8,14 @@ import SkillImg7 from "../assets/skills/express.png";
 import SkillImg8 from "../assets/skills/mongodb.png";
 import SkillImg9 from "../assets/skills/git.png";
 import SkillImg10 from "../assets/skills/tailwindcss.png";
+import project1_1 from "../assets/projects/wms1.png";
+import project1_2 from "../assets/projects/wms2.png";
+import project2_1 from "../assets/projects/rac1.png";
+import project2_2 from "../assets/projects/rac2.png";
+import project3_1 from "../assets/projects/coffee1.png";
+import project3_2 from "../assets/projects/coffee2.png";
 
-export const navigations = ["Home", "Skills", "Projects", "Testimonials", "Contact"];
+export const navigations = ["Home", "Skills", "Education", "Projects", "Contact"];
 
 export const skills = [
     {
@@ -51,5 +57,26 @@ export const skills = [
     {
         image: SkillImg9,
         name: "Git"
+    }
+];
+
+export const projects = [
+    {
+        mainImage: project1_2,
+        hoverImage: project1_1,
+        name: "Warehouse Management",
+        url: "https://wms-react.web.app/"
+    },
+    {
+        mainImage: project2_1,
+        hoverImage: project2_2,
+        name: "Rent a Car",
+        url: "https://rent-a-car-b4150.web.app/"
+    },
+    {
+        mainImage: project3_1,
+        hoverImage: project3_2,
+        name: "Espresso Coffee Shop",
+        url: "https://espresso-coffee-shop.000webhostapp.com/"
     }
 ];
