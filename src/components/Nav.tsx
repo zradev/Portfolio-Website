@@ -36,13 +36,13 @@ const Navbar = () => {
     };
 
     return (
-        <nav className={`relative bg-tertiary p-4 flex justify-center lg:justify-around items-center text-[22px]`}>
+        <nav className={`fixed z-10 top-0 left-0 w-full transition-all duration-300 bg-tertiary p-4 flex justify-center lg:justify-around items-center text-[22px] select-none`}>
             <div className="w-[200px] lg:w-[300px] h-[56px] pt-1 lg:pt-0 mr-3">
                 <img src={logo} alt="logo" />
             </div>
             <ul className="hidden lg:flex space-x-8 capitalize">
                 {navigations.map((nav, index) => (
-                    <li key={index} className="text-white hover:text-yellow cursor-pointer">
+                    <li key={index} className="text-white hover:text-hover cursor-pointer">
                         <Link to={nav} activeClass="active" spy={true} duration={500} offset={-70} className="transition-all duration-100">
                             {nav}
                         </Link>

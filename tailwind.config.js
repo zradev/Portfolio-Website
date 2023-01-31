@@ -6,7 +6,9 @@ module.exports = {
             colors: {
                 primary: "#050402",
                 secondary: "#1C1D24",
-                tertiary: "#131419"
+                tertiary: "#191313",
+                hover: "#e7adad",
+                button: "#6a2f2f"
             },
             backgroundImage: (theme) => ({
                 "gradient-rainbow": "linear-gradient(81.66deg, #00B5EE 7.21%, #FF45A4 45.05%, #FFBA00 78.07%)",
